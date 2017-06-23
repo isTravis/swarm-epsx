@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const Landing = function() {
 	return (
 		<div id={'landing-page'}>
+			<h1>Some other Content!</h1>
 			<Link to={'/waves'}>
 				<div className={'card'}>
 					<span className={'title'}>Tidal Waves</span>

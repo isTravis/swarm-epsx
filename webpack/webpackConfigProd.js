@@ -11,7 +11,7 @@ const extractSass = new ExtractTextPlugin({
 
 module.exports = {
 	entry: {
-		main: resolve(__dirname, '../app'),
+		main: resolve(__dirname, '../app/indexProd.js'),
 	},
 	resolve: {
 		modules: [resolve(__dirname, '../app'), 'node_modules']

@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { connect } from 'react-redux';
-import { getData } from 'actions/app';
 
 const propTypes = {
-	dispatch: PropTypes.func.isRequired,
-	appData: PropTypes.object.isRequired,
 };
 
 class Waves extends Component {
-	// componentWillMount() {
-	// 	this.props.dispatch(getData('333fred'));
-	// }
 
 	render() {
 		console.log('in waves');
@@ -31,4 +24,4 @@ class Waves extends Component {
 }
 
 Waves.propTypes = propTypes;
-export default connect(state => ({ appData: state.app }))(Waves);
+export default Waves;

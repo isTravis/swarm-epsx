@@ -15,7 +15,7 @@ const App = function() {
 	return (
 		<div>
 			<Helmet>
-				<title>React Starter 17</title>
+				<title>Static Test</title>
 				<meta name="description" content="A React Starter Site Template" />
 			</Helmet>
 

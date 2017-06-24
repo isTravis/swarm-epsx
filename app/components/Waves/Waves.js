@@ -10,19 +10,20 @@ const propTypes = {
 };
 
 class Waves extends Component {
-	componentWillMount() {
-		this.props.dispatch(getData('333fred'));
-	}
+	// componentWillMount() {
+	// 	this.props.dispatch(getData('333fred'));
+	// }
 
 	render() {
+		console.log('in waves');
 		return (
 			<div className={'page'}>
 				<Helmet>
-					<title>Waves</title>
+					<title>Wavess</title>
 				</Helmet>
 
 				<h1>Waves</h1>
-				<img width={'150px'} src={'images/waves.png'} alt={'Waves'} />
+				<img width={'150px'} src={'/images/waves.png'} alt={'Waves'} />
 				<div>{JSON.stringify(this.props.appData)}</div>
 			</div>
 		);

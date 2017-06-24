@@ -13,7 +13,7 @@ const NavBar = function() {
 
 	return (
 		<nav className="navbar-page">
-			<div className={'navbar'}>
+			<div className={'navbar funky'}>
 				<Link to={'/'}>React Starter 17</Link>
 				<a role={'button'} tabIndex={0} className={'right'} onClick={toggleSlide}>Menu</a>
 

@@ -10,9 +10,9 @@ const propTypes = {
 };
 
 class Forests extends Component {
-	componentWillMount() {
-		this.props.dispatch(getData('isTravis'));
-	}
+	// componentWillMount() {
+	// 	this.props.dispatch(getData('isTravis'));
+	// }
 
 	render() {
 		return (

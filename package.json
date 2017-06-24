@@ -10,7 +10,7 @@
     "url": "https://github.com/isTravis/react-starter-17.git"
   },
   "scripts": {
-    "build": "rm -rf dist && webpack --config webpack/webpackConfigProd.js && cp -R static/* dist && cp _redirects-prod dist/_redirects",
+    "build": "rm -rf dist && webpack --config webpack/webpackConfigProd.js && cp -R static/* dist",
     "prod": "npm run build && serve ./dist -s",
     "lint": "eslint app webpack",
     "start": "webpack-dev-server --config webpack/webpackConfigDev.js"
@@ -34,6 +34,7 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
     "extract-text-webpack-plugin": "^2.1.0",
+    "history": "^4.6.3",
     "html-webpack-plugin": "^2.24.1",
     "node-sass": "^4.5.2",
     "normalize.css": "^7.0.0",
@@ -49,6 +50,7 @@
     "redux-thunk": "^2.2.0",
     "sass-loader": "^6.0.5",
     "serve": "^5.1.5",
+    "static-site-generator-webpack-plugin": "^3.4.1",
     "style-loader": "^0.17.0",
     "sw-precache-webpack-plugin": "^0.11.0",
     "webpack": "^2.5.1",

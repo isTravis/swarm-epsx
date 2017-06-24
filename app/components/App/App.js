@@ -1,15 +1,15 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Route, withRouter, Switch } from 'react-router-dom';
-import Async from 'react-code-splitting';
+// import Async from 'react-code-splitting';
 import Nav from 'components/Nav/Nav';
+import Landing from 'components/Landing/Landing';
+import Waves from 'components/Waves/Waves';
+import Forests from 'components/Forests/Forests';
+import NoMatch from 'components/NoMatch/NoMatch';
 
 require('./app.scss');
 
-const Landing = () => <Async load={import('components/Landing/Landing')} />;
-const Waves = () => <Async load={import('components/Waves/Waves')} />;
-const Forests = () => <Async load={import('components/Forests/Forests')} />;
-const NoMatch = () => <Async load={import('components/NoMatch/NoMatch')} />;
 
 const App = function() {
 	return (
@@ -25,6 +25,7 @@ const App = function() {
 				<Route exact path="/" component={Landing} />
 				<Route path="/waves" component={Waves} />
 				<Route path="/forests" component={Forests} />
+				<Route path="/404.html" component={NoMatch} />
 				<Route path="/*" component={NoMatch} />
 			</Switch>
 		</div>

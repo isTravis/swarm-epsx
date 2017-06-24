@@ -12,7 +12,7 @@ class Waves extends Component {
 		return (
 			<div className={'page'}>
 				<Helmet>
-					<title>Wavess</title>
+					<title>Waves</title>
 				</Helmet>
 
 				<h1>Waves</h1>

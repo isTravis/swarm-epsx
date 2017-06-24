@@ -1,13 +1,13 @@
 {
-  "name": "react-starter-17",
+  "name": "react-static-generator-17",
   "version": "0.0.1",
-  "description": "React Starter 17",
+  "description": "React Static Generator Starter 17",
   "main": "server.js",
-  "author": "Travis Rich <reactstarter17@travisrich.com>",
+  "author": "Travis Rich <reactstaticgenerator17@travisrich.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/isTravis/react-starter-17.git"
+    "url": "https://github.com/isTravis/react-static-generator-17.git"
   },
   "scripts": {
     "build": "rm -rf dist && webpack --config webpack/webpackConfigProd.js && cp -R static/* dist",
@@ -34,26 +34,18 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
     "extract-text-webpack-plugin": "^2.1.0",
-    "history": "^4.6.3",
     "html-webpack-plugin": "^2.24.1",
     "node-sass": "^4.5.2",
     "normalize.css": "^7.0.0",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
-    "react-code-splitting": "^1.1.1",
     "react-dom": "^15.5.4",
-    "react-g-analytics": "^0.4.2",
     "react-helmet": "^5.0.3",
-    "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
-    "redux": "^3.5.2",
-    "redux-thunk": "^2.2.0",
     "sass-loader": "^6.0.5",
-    "serve": "^5.1.5",
     "static-site-generator-webpack-plugin": "^3.4.1",
     "style-loader": "^0.17.0",
-    "sw-precache-webpack-plugin": "^0.11.0",
-    "webpack": "^2.5.1",
+    "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   },
   "engines": {
